@@ -11,15 +11,15 @@ const Maps = () => {
   return (
     <div className="container mx-auto px-4 py-6 space-y-6">
       <div>
-        <h1 className="text-3xl font-bold text-gray-900">Interactive Maps</h1>
-        <p className="text-gray-500 mt-1">Explore geographical data and insights</p>
+        <h1 className="text-3xl font-bold text-gray-900">Mapas Interativos</h1>
+        <p className="text-gray-500 mt-1">Explore dados geográficos e insights</p>
       </div>
       
       <div className="flex flex-col md:flex-row gap-4 md:items-center justify-between">
         <div className="relative w-full md:max-w-sm">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
           <Input 
-            placeholder="Search locations..." 
+            placeholder="Buscar localizações..." 
             className="pl-10"
           />
         </div>
@@ -27,20 +27,20 @@ const Maps = () => {
         <div className="flex gap-2">
           <Button variant="outline">
             <Layers className="h-4 w-4 mr-2" />
-            Layers
+            Camadas
           </Button>
           <Button className="bg-geo-blue hover:bg-geo-darkBlue">
             <MapPin className="h-4 w-4 mr-2" />
-            Add Location
+            Adicionar Local
           </Button>
         </div>
       </div>
       
       <Tabs defaultValue="standard" className="w-full">
         <TabsList className="grid w-full max-w-md grid-cols-3">
-          <TabsTrigger value="standard">Standard</TabsTrigger>
-          <TabsTrigger value="satellite">Satellite</TabsTrigger>
-          <TabsTrigger value="terrain">Terrain</TabsTrigger>
+          <TabsTrigger value="standard">Padrão</TabsTrigger>
+          <TabsTrigger value="satellite">Satélite</TabsTrigger>
+          <TabsTrigger value="terrain">Terreno</TabsTrigger>
         </TabsList>
         <TabsContent value="standard">
           <MapComponent />
@@ -71,14 +71,14 @@ const Maps = () => {
                   <MapPin className="h-10 w-10 text-geo-blue opacity-20" />
                 </div>
                 <div className="absolute bottom-3 left-3 bg-white p-2 rounded-md shadow-sm">
-                  <h4 className="text-sm font-medium">Region {item} Map</h4>
+                  <h4 className="text-sm font-medium">Mapa da Região {item}</h4>
                 </div>
               </div>
               <div className="p-4">
-                <h3 className="font-medium">Geographic Analysis {item}</h3>
-                <p className="text-sm text-gray-500 mt-1">Economic and population data mapping</p>
+                <h3 className="font-medium">Análise Geográfica {item}</h3>
+                <p className="text-sm text-gray-500 mt-1">Mapeamento de dados econômicos e populacionais</p>
                 <Button variant="link" className="text-geo-blue p-0 h-auto mt-2">
-                  View Details
+                  Ver Detalhes
                 </Button>
               </div>
             </CardContent>

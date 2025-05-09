@@ -17,8 +17,8 @@ const MapComponent = () => {
           
           <div className="text-center text-gray-500">
             <MapPin className="mx-auto h-20 w-20 text-geo-blue opacity-20" />
-            <p className="mt-4 font-medium">Interactive Map</p>
-            <p className="text-sm">Zoom, pan, and explore geographic data</p>
+            <p className="mt-4 font-medium">Mapa Interativo</p>
+            <p className="text-sm">Amplie, arraste e explore dados geográficos</p>
           </div>
         </div>
       </div>
@@ -41,18 +41,18 @@ const MapComponent = () => {
 
       {/* Map legend */}
       <div className="absolute bottom-4 left-4 bg-white p-3 rounded-md shadow-md">
-        <div className="text-sm font-medium mb-2">Legend</div>
+        <div className="text-sm font-medium mb-2">Legenda</div>
         <div className="flex items-center space-x-2 mb-1">
           <div className="w-3 h-3 rounded-full bg-geo-blue"></div>
-          <span className="text-xs">Population Centers</span>
+          <span className="text-xs">Centros Populacionais</span>
         </div>
         <div className="flex items-center space-x-2 mb-1">
           <div className="w-3 h-3 rounded-full bg-geo-teal"></div>
-          <span className="text-xs">Economic Zones</span>
+          <span className="text-xs">Zonas Econômicas</span>
         </div>
         <div className="flex items-center space-x-2">
           <div className="w-3 h-3 rounded-full bg-geo-green"></div>
-          <span className="text-xs">Resource Areas</span>
+          <span className="text-xs">Áreas de Recursos</span>
         </div>
       </div>
     </Card>

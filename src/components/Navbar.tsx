@@ -14,10 +14,10 @@ const Navbar = () => {
         </div>
         
         <nav className="hidden md:flex items-center space-x-6">
-          <Link to="/" className="text-gray-700 hover:text-geo-blue transition-colors font-medium">Dashboard</Link>
-          <Link to="/maps" className="text-gray-700 hover:text-geo-blue transition-colors font-medium">Maps</Link>
-          <Link to="/analytics" className="text-gray-700 hover:text-geo-blue transition-colors font-medium">Analytics</Link>
-          <Link to="/reports" className="text-gray-700 hover:text-geo-blue transition-colors font-medium">Reports</Link>
+          <Link to="/" className="text-gray-700 hover:text-geo-blue transition-colors font-medium">Painel</Link>
+          <Link to="/maps" className="text-gray-700 hover:text-geo-blue transition-colors font-medium">Mapas</Link>
+          <Link to="/analytics" className="text-gray-700 hover:text-geo-blue transition-colors font-medium">Análises</Link>
+          <Link to="/reports" className="text-gray-700 hover:text-geo-blue transition-colors font-medium">Relatórios</Link>
         </nav>
         
         <div className="flex items-center space-x-2">
@@ -27,7 +27,7 @@ const Navbar = () => {
           <Button variant="ghost" size="icon" className="text-gray-600">
             <Settings size={20} />
           </Button>
-          <Button className="bg-geo-blue hover:bg-geo-darkBlue">Log In</Button>
+          <Button className="bg-geo-blue hover:bg-geo-darkBlue">Entrar</Button>
         </div>
       </div>
     </header>
